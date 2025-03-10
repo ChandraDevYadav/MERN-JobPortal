@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes lineMove {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+.animate-lineMove {
+  animation: lineMove 2s infinite cubic-bezier(0, 1.11, 1, 1);
+}
